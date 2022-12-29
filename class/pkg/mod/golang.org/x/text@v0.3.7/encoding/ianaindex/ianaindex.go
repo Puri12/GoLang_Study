@@ -113,7 +113,7 @@ func (x *Index) Name(e encoding.Encoding) (string, error) {
 // The exact definition of Set depends a bit on if and how we want to let users
 // write their own Encoding implementations. Also, it is not possible yet to
 // only partially load the encodings without doing some refactoring. Until this
-// is solved, we might as well not support Set.
+// is solved.ac, we might as well not support Set.
 // // Set sets the e to be used for the encoding scheme identified by name. Only
 // // canonical names may be used. An empty name assigns e to its internally
 // // associated encoding scheme.

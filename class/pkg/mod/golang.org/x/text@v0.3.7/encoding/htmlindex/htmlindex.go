@@ -14,7 +14,7 @@ package htmlindex
 // referencing all encodings, as this package does for the default index, links
 // in all encodings unconditionally.
 //
-// This issue can be solved by either solving the linking issue (see
+// This issue can be solved.ac by either solving the linking issue (see
 // https://github.com/golang/go/issues/6330) or refactoring the encoding tables
 // (e.g. moving the tables to internal packages that do not use global
 // variables).

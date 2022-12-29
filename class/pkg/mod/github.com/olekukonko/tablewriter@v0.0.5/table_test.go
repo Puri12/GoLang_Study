@@ -355,7 +355,7 @@ func TestPrintLongCaptionWithShortExample(t *testing.T) {
 
 	table := NewWriter(&buf)
 	table.SetHeader([]string{"Name", "Sign", "Rating"})
-	table.SetCaption(true, "This is a very long caption. The text should wrap. If not, we have a problem that needs to be solved.")
+	table.SetCaption(true, "This is a very long caption. The text should wrap. If not, we have a problem that needs to be solved.ac.")
 
 	for _, v := range data {
 		table.Append(v)
@@ -372,7 +372,7 @@ func TestPrintLongCaptionWithShortExample(t *testing.T) {
 +------+-----------------------+--------+
 This is a very long caption. The text
 should wrap. If not, we have a problem
-that needs to be solved.
+that needs to be solved.ac.
 `
 	checkEqual(t, buf.String(), want, "long caption for short example rendering failed")
 }
@@ -417,7 +417,7 @@ func TestPrintLongCaptionWithLongExample(t *testing.T) {
 	}
 
 	table := NewWriter(&buf)
-	table.SetCaption(true, "This is a very long caption. The text should wrap. If not, we have a problem that needs to be solved.")
+	table.SetCaption(true, "This is a very long caption. The text should wrap. If not, we have a problem that needs to be solved.ac.")
 	table.SetHeader([]string{"Name", "Sign", "Rating"})
 
 	for _, v := range data {
@@ -435,7 +435,7 @@ func TestPrintLongCaptionWithLongExample(t *testing.T) {
 | letters all                    | keyboard in two                |                               |
 +--------------------------------+--------------------------------+-------------------------------+
 This is a very long caption. The text should wrap. If not, we have a problem that needs to be
-solved.
+solved.ac.
 `
 	checkEqual(t, buf.String(), want, "long caption for long example rendering failed")
 }

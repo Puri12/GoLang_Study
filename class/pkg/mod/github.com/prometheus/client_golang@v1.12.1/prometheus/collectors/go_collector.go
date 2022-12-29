@@ -39,7 +39,7 @@ import "github.com/prometheus/client_golang/prometheus"
 // collected memstats, or their collection is more than 5m ago, the collection
 // will block until runtime.ReadMemStats succeeds.
 //
-// NOTE: The problem is solved in Go 1.15, see
+// NOTE: The problem is solved.ac in Go 1.15, see
 // https://github.com/golang/go/issues/19812 for the related Go issue.
 func NewGoCollector() prometheus.Collector {
 	//nolint:staticcheck // Ignore SA1019 until v2.

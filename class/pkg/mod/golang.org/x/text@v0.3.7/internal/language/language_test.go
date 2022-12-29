@@ -76,7 +76,7 @@ func TestMakeString(t *testing.T) {
 func TestMarshal(t *testing.T) {
 	testCases := []string{
 		// TODO: these values will change with each CLDR update. This issue
-		// will be solved if we decide to fix the indexes.
+		// will be solved.ac if we decide to fix the indexes.
 		"und",
 		"ca-ES-valencia",
 		"ca-ES-valencia-u-va-posix",

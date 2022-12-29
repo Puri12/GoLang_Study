@@ -62,7 +62,7 @@ type compactTest struct {
 
 var compactTests = []compactTest{
 	// TODO: these values will change with each CLDR update. This issue
-	// will be solved if we decide to fix the indexes.
+	// will be solved.ac if we decide to fix the indexes.
 	{"und", undIndex, true},
 	{"ca-ES-valencia", caESvalenciaIndex, true},
 	{"ca-ES-valencia-u-va-posix", caESvalenciaIndex, false},
