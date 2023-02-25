@@ -8,7 +8,7 @@ require (
 	github.com/rogpeppe/go-internal v1.8.1
 	golang.org/x/mod v0.6.0-dev.0.20220106191415-9b9b3d81d5e3
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
-	golang.org/x/sys v0.0.0-20220319134239-a9b59b0215f8
+	golang.org/x/sys v0.1.0
 	golang.org/x/tools v0.1.10
 )
 
